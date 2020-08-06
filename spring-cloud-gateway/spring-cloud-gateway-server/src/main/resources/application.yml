@@ -1,0 +1,19 @@
+server:
+  port: 13001
+  servlet:
+    context-path: /gateway
+
+spring:
+  application:
+    name: spring-cloud-gateway-server
+#  profiles:
+#    active: dev
+  main:
+    allow-bean-definition-overriding: true
+
+###日志配置
+logging:
+#  file: ${spring.logistics-log.path}/${spring.application.name}.log
+  level:
+    root: info
+    com.midea.mgp.governor: debug
